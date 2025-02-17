@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>About - FlaskApp</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+        .about-section {
+            background: linear-gradient(135deg, #007bff, #6610f2);
+            color: white;
+            padding: 80px 20px;
+            text-align: center;
+        }
+        .feature-card {
+            transition: transform 0.3s ease-in-out;
+        }
+        .feature-card:hover {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container">
+            <a class="navbar-brand" href="/">FlaskApp</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- About Section -->
+    <div class="about-section">
+        <div class="container">
+            <h1 class="display-4 fw-bold">About FlaskApp</h1>
+            <p class="lead">FlaskApp is a dynamic and lightweight web application built using the Flask micro-framework. It is designed for speed, scalability, and ease of use.</p>
+        </div>
+    </div>
+
+    <!-- Features Section -->
+    <div class="container py-5">
+        <div class="row text-center">
+            <div class="col-md-4">
+                <div class="card feature-card p-4 shadow">
+                    <div class="card-body">
+                        <h3 class="text-primary"><i class="bi bi-lightning"></i> Lightweight & Fast</h3>
+                        <p>FlaskApp is built with simplicity in mind, ensuring fast loading times and an efficient user experience.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card feature-card p-4 shadow">
+                    <div class="card-body">
+                        <h3 class="text-success"><i class="bi bi-code-slash"></i> Developer Friendly</h3>
+                        <p>With minimal boilerplate code, FlaskApp allows developers to quickly build and deploy applications.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card feature-card p-4 shadow">
+                    <div class="card-body">
+                        <h3 class="text-danger"><i class="bi bi-cloud-upload"></i> Scalable & Secure</h3>
+                        <p>Designed with scalability in mind, FlaskApp supports cloud deployment and integrates security best practices.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- CTA Section -->
+    <div class="text-center py-5">
+        <h2>Want to Learn More?</h2>
+        <p>Explore Flask's capabilities and start building your own applications today!</p>
+        <a href="https://flask.palletsprojects.com/" class="btn btn-primary btn-lg">Visit Flask Documentation</a>
+    </div>
+
+</body>
+</html>
